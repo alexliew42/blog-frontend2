@@ -6,7 +6,8 @@ export function PostsIndex(props) {
           <h1>{post.title}</h1>
           <p>{post.body}</p>
           <img src={post.image} />
-
+          <br/>
+          <button onClick={() => props.onShowPost(post)}>More Info</button>
         </div>
       ))}
       <p>This is Index and should be part of content.</p>
